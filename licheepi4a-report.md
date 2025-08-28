@@ -24,7 +24,6 @@ https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20240720/
 最新版本（6.6内核）：
 https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20250526/
 //注意：根据开发板的内存版本选择合适的uboot文件（扫描开发板上的二维码，第二部分的数字便是核心板的内存+存储配置）
-![[Pasted image 20250828135519.png]]
 ①确认好板卡规格后，下载、校验并解压对应的 uboot、boot以及root文件（uboot文件不需要解压）
 ②最好将这三个文件放在fastboot同级目录下
 
@@ -54,7 +53,6 @@ https://developer.android.com/studio/run/win-usb?hl=zh-cn
 .\fastboot.exe flash boot 文件绝对路径
 .\fastboot.exe flash root 文件绝对路径
 //注意：如果遇到安装驱动失败，就将板卡的usb线拔掉，重新按住BOOT键接入，再重新刷写一下镜像就可以了
-![[Pasted image 20250828141328.png]]
 ④至此镜像刷写完成，可以通过重新拔插电源线的方式启动系统。
 
 重新启动的过程我遇到过无法开机，显示器出现四只企鹅无法跳转，串口调试工具出现initramfs的情况，说明启动失败了，镜像可能烧录的过程出现一点差错，检查一下内存文档是否下载错了，再重新刷写一下镜像就解决了。
