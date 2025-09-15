@@ -8,11 +8,12 @@
 - M.2 NVMe SSD 一个  
 - M.2 转 USB 硬盘盒，用于镜像刷写  
 ## 安装步骤  
+根据 [软件参考手册](https://www.sifive.cn/document-file/hifive-unmatched-software-reference-manual)，HiFive Unmatched 有多种启动方式。  
 - 通过Windows下载镜像文件  
 - 首先将sd卡接入电脑，下载`https://github.com/yuzibo/Unmatched-Debian-image/releases/download/0.0.5-beta/sd-uboot.img.xz`   
-- 使用Rufus工具进行编译  
+- 使用Rufus工具进行烧录  
 - 接着将nvme ssd固态硬盘接入电脑，下载`https://github.com/yuzibo/Unmatched-Debian-image/releases/download/0.0.5-beta/nvme-rootfs.img.xz`   
-- 使用Rufus工具进行编译  
+- 使用Rufus工具进行烧录  
 ### 登录系统  
 - 通过板载串口（使用 microUSB 线缆连接至其他计算机）登录系统。  
 - 默认用户名：`rv` 默认密码：`rv`  
